@@ -36,6 +36,12 @@ body {
     -webkit-background-clip: text;
     -moz-background-clip: text;
     color: transparent;
+
+    transition: all 0.3s;
+}
+
+.catImg__header:hover {
+    transform: scale(1.2);
 }
 
 .catImg__img {

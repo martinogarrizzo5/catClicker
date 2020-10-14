@@ -96,6 +96,10 @@ footer {
     color: white;
 }
 
+.loadedImg {
+    display: none;
+}
+
 @media (max-width: 1350px) {
     .catImg__imgContainer {
         height: 80%;

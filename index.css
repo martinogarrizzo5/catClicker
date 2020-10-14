@@ -20,16 +20,15 @@ body {
 .catImg__section {
     text-align: center;
 
-    margin-top: 1rem;
-
     height: 80vh;
 }
 
 .catImg__header {
+    display: inline-block;
     font-family: "Sansita Swashed", cursive;
     font-size: 4rem;
     text-transform: uppercase;
-    margin: 2rem;
+    margin: 2rem 0;
 
     background-image: linear-gradient(rgb(255, 230, 0), red);
     background-clip: text;
@@ -44,11 +43,19 @@ body {
     transform: scale(1.2);
 }
 
+/*/////////////// cat image ////////////*/
+.catImg__imgContainer {
+    display: block;
+    height: 80%;
+    margin: 5rem auto;
+}
+
 .catImg__img {
+    display: inline-block;
     cursor: pointer;
     height: 100%;
 
-    margin: 3rem 0;
+    margin: 3rem auto;
 
     outline: 1rem solid transparent;
     outline-offset: 1rem;
@@ -71,28 +78,44 @@ body {
 .catImg__count {
     font-size: 3rem;
     text-transform: uppercase;
+    margin-bottom: 5rem;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+
+    display: block;
+
+    width: 100%;
+    text-align: center;
+
+    font-size: 1.6rem;
+
+    background-color: rgb(49, 49, 49);
+    color: white;
 }
 
 @media (max-width: 1350px) {
-    .catImg__img {
+    .catImg__imgContainer {
         height: 80%;
     }
 }
 
 @media (max-width: 1100px) {
-    .catImg__img {
+    .catImg__imgContainer {
         height: 60%;
     }
 }
 
 @media (max-width: 900px) {
-    .catImg__img {
+    .catImg__imgContainer {
         height: 40%;
     }
 }
 
 @media (max-width: 700px) {
-    .catImg__img {
+    .catImg__imgContainer {
         height: 30%;
     }
 }

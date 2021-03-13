@@ -123,3 +123,12 @@ footer {
         height: 30%;
     }
 }
+
+@media (max-width: 37.5em) {
+    .catImg__imgContainer {
+        display: block;
+        height: 20rem;
+        margin: 5rem auto;
+
+    }
+}
